@@ -3,3 +3,20 @@ html,body {
     margin: 0;
     padding: 0;
 }
+.PGI-mainCont{
+    width: 100%;
+}
+.PGI-box{
+    margin: 0 auto;
+    display: table;
+    height: 100%;
+}
+.PGI-cont{
+    display: table-cell;
+    vertical-align: middle;
+}
+.PGI-cont > .main{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
