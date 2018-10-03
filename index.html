@@ -1,14 +1,75 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <script>
+        var color = '#607D8B';
+
+    </script>
+    <style>
+        .merchat-bg-color {
+            background-color: #607D8B;
+        }
+        
+        .merchat-fnt-color {
+            color: #607D8B;
+        }
+        
+        .merchat-font {
+            font-family: Raleway;
+        }
+        .merchat-font-style {
+            font-style: italic;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="PGI-mainCont">
-        <div class="PGI-box">
-            <div class="PGI-cont">
-                <div class="main"></div>
+    <div class="PGI">
+
+        <div class="box">
+            <div class="content">
+                <div class="bank-logo">
+                    <img src="assets/image/hnb.svg" height="25" width="100%">
+                </div>
+                <div class="title-info merchat-bg-color merchat-font">
+                    Payment Gateway
+                </div>
+                <div class="message merchat-font">
+                    <div class="msg">
+                        Error : Please fill all the fields appers in red
+                    </div>
+                    <button type="button" class="close">&times;</button>
+                </div>
+                <div class="merchant">
+                    <div class="logo">
+                        <img src="assets/image/logo2.png" width="auto" height="35" />
+                    </div>
+                    <div class="name merchat-font merchat-font-style">Nike. Inc</div>
+                    <div class="theme merchat-font">Just do it</div>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="title-details merchat-font">
+                    <div class="title">
+                        Enter your credit card details
+                    </div>
+                    <div class="detail">
+                        Please make sure you fillin all mandatory infromation marked with *
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="label merchat-font">
+                        <div class="cont merchat-bg-color">Amount</div>
+                        <div class="line"></div>
+                        <div class="amnt merchat-bg-color">LKR 1234.45</div>
+                    </div>
+                </div>
+                <div class="sec-mandatory"></div>
+                <div class="sec-optional"></div>
+                <div class="sec-footer"></div>
             </div>
         </div>
     </div>

@@ -1,22 +1,135 @@
 @import 'fonts.css';
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
-.PGI-mainCont{
+.PGI {
     width: 100%;
-}
-.PGI-box{
-    margin: 0 auto;
-    display: table;
     height: 100%;
 }
-.PGI-cont{
-    display: table-cell;
-    vertical-align: middle;
-}
-.PGI-cont > .main{
+.PGI > .box {
     width: 500px;
-    height: 500px;
-    background-color: red;
+    height: 1000px;
+    margin: 80px auto;
+    background-color: #F5F5F5;
+    box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3);
+}
+.PGI > .box > .content {}
+.PGI > .box > .content > .bank-logo {
+    position: absolute;
+    margin: -30px 0 0 -90px;
+}
+.PGI > .box > .content > .title-info {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 2px 15px;
+}
+.PGI > .box > .content > .message {
+    display: block;
+    background-color: #FF1717;
+    text-align: center;
+    font-size: 11px;
+    padding: 3px;
+    color: white;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.PGI > .box > .content > .message > .msg {
+    width: 94%;
+    float: left;
+}
+.PGI > .box > .content > .message > button {
+    float: right;
+    border: 0px solid;
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+.PGI > .box > .content > .message > button:hover {
+    color: black;
+}
+.PGI > .box > .content > .merchant {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.PGI > .box > .content > .merchant > .logo {
+    padding: 5px;
+    float: left;
+    width: 100%;
+}
+.PGI > .box > .content > .merchant > .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+.PGI > .box > .content > .merchant > .theme {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.PGI > .box > .content > .title-details {
+    text-align: center;
+}
+.PGI > .box > .content > .title-details > .title {
+    font-size: 17px;
+}
+.PGI > .box > .content > .title-details > .detail {
+    font-size: 9px;
+}
+.PGI > .box > .content > .amount {
+    width: 100%;
+    height: 100px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    padding: 10px;
+    background-image: url(../image/card.svg);
+    background-repeat: no-repeat;
+    background-position: 104% top;
+    background-size: 85px;
+}
+.PGI > .box > .content > .amount > .label {
+    float: right;
+    width: 200px;
+}
+.PGI > .box > .content > .amount > .label > .cont {
+    float: left;
+    height: 20px;
+    padding: 5px 5px 5px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.PGI > .box > .content > .amount > .label > .line {
+    height: 20px;
+    padding: 5px 0;
+    width: 1px;
+    background: whitesmoke;
+    float: left;
+}
+.PGI > .box > .content > .amount > .label > .amnt {
+    height: 20px;
+    float: left;
+    padding: 5px 15px 5px 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.PGI > .box > .content > .sec-mandatory {}
+.PGI > .box > .content > .sec-optional {}
+.PGI > .box > .content > .sec-footer {}
+.horizontal-line {
+    width: 92%;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 5px auto;
 }

@@ -1,0 +1,13 @@
+/*
+@media only screen and (min-width: 570px) {
+    .PGI > .box {
+        
+    }
+}
+*/
+@media only screen and (max-width: 570px) {
+    .PGI > .box {
+        width: 90%;
+        height: 1000px;
+    }
+}
