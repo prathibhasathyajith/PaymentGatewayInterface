@@ -36,6 +36,7 @@ body {
     float: left;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 .PGI > .box > .content > .message > .msg {
     width: 94%;
@@ -60,15 +61,15 @@ body {
     color: black;
 }
 .PGI > .box > .content > .merchant {
-    text-align: center;
-    box-sizing: border-box;
     margin: 0 auto;
     box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 15px 0 15px 25px;
 }
 .PGI > .box > .content > .merchant > .logo {
-    padding: 5px;
     float: left;
-    width: 100%;
+    width: auto;
 }
 .PGI > .box > .content > .merchant > .name {
     font-size: 14px;
@@ -101,14 +102,16 @@ body {
 }
 .PGI > .box > .content > .amount > .label {
     float: right;
-    width: 200px;
+    width: 210px;
 }
 .PGI > .box > .content > .amount > .label > .cont {
     float: left;
     height: 20px;
-    padding: 5px 5px 5px 15px;
+    padding: 9px 5px 1px 15px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    font-size: 10px;
+    box-shadow: 9px 0px 20px 0px rgba(0, 0, 0, 0.6);
 }
 .PGI > .box > .content > .amount > .label > .line {
     height: 20px;
@@ -120,9 +123,15 @@ body {
 .PGI > .box > .content > .amount > .label > .amnt {
     height: 20px;
     float: left;
-    padding: 5px 15px 5px 5px;
+    padding: 7px 15px 3px 5px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    box-shadow: 6px 0px 20px 0px rgba(0, 0, 0, 0.6);
+    font-family: Roboto;
+    font-size: 14px;
+}
+#ccode{
+    font-size: 10px;
 }
 .PGI > .box > .content > .sec-mandatory {}
 .PGI > .box > .content > .sec-optional {}
