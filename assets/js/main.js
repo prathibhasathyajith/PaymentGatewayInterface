@@ -1,19 +1,30 @@
 $(document).ready(function () {
+    new Cleave('.input-0', {
+        creditCard: true,
+        onCreditCardTypeChanged: function (type) {
+            document.querySelector('.type').innerHTML = type;
+        }
+    });
     //title-info font color
-    $(".PGI > .box > .content > .title-info").css('color',invertColor(color,true));
+    $(".PGI > .box > .content > .title-info").css('color', invertColor(color, true));
     // name color
-    $(".PGI > .box > .content > .merchant > .name").css('color',ColorLuminance(color,-0.6));
+    $(".PGI > .box > .content > .merchant > .name").css('color', ColorLuminance(color, -0.6));
     //amount color
-    $(".PGI > .box > .content > .amount > .label > .cont").css('color',invertColor(color,true));
-    $(".PGI > .box > .content > .amount > .label > .amnt").css('color',invertColor(color,true));
-    
+    $(".PGI > .box > .content > .amount > .label > .cont").css('color', invertColor(color, true));
+    $(".PGI > .box > .content > .amount > .label > .amnt").css('color', invertColor(color, true));
+    // line background color
+    $(".PGI > .box > .content > .amount > .label > .line").css('background', invertColor(color, true));
+
     //message close button
-    $(".PGI > .box > .content > .message > .close").click(function(){
+    $(".PGI > .box > .content > .message > .close").click(function () {
         $(".PGI > .box > .content > .message").slideUp(100);
     });
-    
-    
+
+
+
+
 });
+
 function ColorLuminance(hex, lum) {
 
     // validate hex string
@@ -24,7 +35,8 @@ function ColorLuminance(hex, lum) {
     lum = lum || 0;
 
     // convert to decimal and change luminosity
-    var rgb = "#", c, i;
+    var rgb = "#",
+        c, i;
     for (i = 0; i < 3; i++) {
         c = parseInt(hex.substr(i * 2, 2), 16);
         c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
@@ -33,6 +45,7 @@ function ColorLuminance(hex, lum) {
 
     return rgb;
 }
+
 function invertColor(hex, bw) {
     if (hex.indexOf('#') === 0) {
         hex = hex.slice(1);
@@ -48,9 +61,7 @@ function invertColor(hex, bw) {
         g = parseInt(hex.slice(2, 4), 16),
         b = parseInt(hex.slice(4, 6), 16);
     if (bw) {
-        return (r * 0.299 + g * 0.587 + b * 0.114) > 186
-            ? '#000000'
-            : '#FFFFFF';
+        return (r * 0.299 + g * 0.587 + b * 0.114) > 186 ? '#000000' : '#FFFFFF';
     }
     // invert color components
     r = (255 - r).toString(16);
@@ -64,4 +75,13 @@ function padZero(str, len) {
     len = len || 2;
     var zeros = new Array(len).join('0');
     return (zeros + str).slice(-len);
+}
+
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }

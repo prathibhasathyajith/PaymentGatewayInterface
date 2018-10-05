@@ -5,21 +5,22 @@
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <script>
-        var color = '#607D8B';
+        var color = '#364E63';
 
     </script>
     <style>
         .merchat-bg-color {
-            background-color: #607D8B;
+            background-color: #364E63;
         }
         
         .merchat-fnt-color {
-            color: #607D8B;
+            color: #364E63;
         }
         
         .merchat-font {
             font-family: Raleway;
         }
+        
         .merchat-font-style {
             font-style: italic;
         }
@@ -32,9 +33,6 @@
 
         <div class="box">
             <div class="content">
-                <div class="bank-logo">
-                    <img src="assets/image/hnb.svg" height="25" width="100%">
-                </div>
                 <div class="title-info merchat-bg-color merchat-font">
                     Payment Gateway
                 </div>
@@ -46,7 +44,10 @@
                 </div>
                 <div class="merchant">
                     <div class="logo">
-                        <img src="assets/image/logo2.png" width="auto" height="35" />
+                        <img src="assets/image/logo2.png" width="auto" height="30" />
+                    </div>
+                    <div class="logo-bank">
+                        <img src="assets/image/hnb.svg" height="35" width="100%" />
                     </div>
                     <div class="name merchat-font merchat-font-style">Nike. Inc</div>
                     <div class="theme merchat-font">Just do it</div>
@@ -67,7 +68,13 @@
                         <div class="amnt merchat-bg-color"><span id="ccode">LKR</span> 1234.45</div>
                     </div>
                 </div>
-                <div class="sec-mandatory"></div>
+                <div class="horizontal-line"></div>
+                <div class="sec-mandatory">
+                    <section>
+                        <p>Credit card detector (<span class="type">unknown</span>): </p>
+                        <input class="input-0" />
+                    </section>
+                </div>
                 <div class="sec-optional"></div>
                 <div class="sec-footer"></div>
             </div>
@@ -75,6 +82,7 @@
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/cleave.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

@@ -6,25 +6,21 @@ body {
 }
 .PGI {
     width: 100%;
-    height: 100%;
 }
 .PGI > .box {
-    width: 500px;
-    height: 1000px;
-    margin: 80px auto;
+    width: 600px;
+    height: 550px;
+    margin: 30px auto;
     background-color: #F5F5F5;
     box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3);
 }
 .PGI > .box > .content {}
-.PGI > .box > .content > .bank-logo {
-    position: absolute;
-    margin: -30px 0 0 -90px;
-}
 .PGI > .box > .content > .title-info {
     font-size: 11px;
     font-style: italic;
     font-weight: 600;
-    padding: 2px 15px;
+    padding: 2px 25px;
+    text-align: right;
 }
 .PGI > .box > .content > .message {
     display: block;
@@ -36,7 +32,7 @@ body {
     float: left;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .PGI > .box > .content > .message > .msg {
     width: 94%;
@@ -65,11 +61,18 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    padding: 15px 0 15px 25px;
+    padding: 5px 0 5px 25px;
 }
 .PGI > .box > .content > .merchant > .logo {
     float: left;
     width: auto;
+}
+.PGI > .box > .content > .merchant > .logo-bank > img {
+    float: right;
+    width: auto;
+    height: 35px;
+    padding: 0px 25px 0px 25px;
+    border-left: 1px solid #c3c3c3;
 }
 .PGI > .box > .content > .merchant > .name {
     font-size: 14px;
@@ -81,7 +84,9 @@ body {
     font-weight: 500;
 }
 .PGI > .box > .content > .title-details {
-    text-align: center;
+    text-align: left;
+    float: left;
+    padding: 10px 25px;
 }
 .PGI > .box > .content > .title-details > .title {
     font-size: 17px;
@@ -91,18 +96,18 @@ body {
 }
 .PGI > .box > .content > .amount {
     width: 100%;
-    height: 100px;
+    height: 65px;
     background: #f5f5f5;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 17px;
     background-image: url(../image/card.svg);
     background-repeat: no-repeat;
-    background-position: 104% top;
-    background-size: 85px;
+    background-position: 102% top;
+    background-size: 62px;
 }
 .PGI > .box > .content > .amount > .label {
     float: right;
-    width: 210px;
+    width: 200px;
 }
 .PGI > .box > .content > .amount > .label > .cont {
     float: left;
@@ -117,7 +122,6 @@ body {
     height: 20px;
     padding: 5px 0;
     width: 1px;
-    background: whitesmoke;
     float: left;
 }
 .PGI > .box > .content > .amount > .label > .amnt {
@@ -130,7 +134,7 @@ body {
     font-family: Roboto;
     font-size: 14px;
 }
-#ccode{
+#ccode {
     font-size: 10px;
 }
 .PGI > .box > .content > .sec-mandatory {}
