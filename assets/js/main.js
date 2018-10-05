@@ -2,7 +2,7 @@ $(document).ready(function () {
     new Cleave('.input-0', {
         creditCard: true,
         onCreditCardTypeChanged: function (type) {
-            document.querySelector('.type').innerHTML = type;
+            document.querySelector('.types').innerHTML = type;
         }
     });
     //title-info font color
