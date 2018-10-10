@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    new Cleave('.input-0', {
+    new Cleave('.input-cardField', {
         creditCard: true,
         onCreditCardTypeChanged: function (type) {
             document.querySelector('.types').innerHTML = type;

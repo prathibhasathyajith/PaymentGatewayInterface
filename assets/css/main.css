@@ -137,7 +137,58 @@ body {
 #ccode {
     font-size: 10px;
 }
-.PGI > .box > .content > .sec-mandatory {}
+.PGI > .box > .content > .sec-mandatory {
+    padding: 17px;
+}
+.PGI > .box > .content > .sec-mandatory > .sec-field {
+    padding: 1px;
+    float: left;
+    width: 49%;
+}
+.PGI > .box > .content > .sec-mandatory > .sec-field >label {
+    font-family: Raleway;
+    font-size: 11px;
+    padding: 0px 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: gray;
+}
+.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field {
+    padding: 3px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_ {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+    outline: none;
+    font-family: Roboto;
+    background: transparent;
+    font-size: 13px;
+    color: gray;
+}
+.sec-field >.input-field > input.input-cardField {
+    width: 75%;
+    padding: 0 10px;
+    height: 32px;
+    border: 1px solid gray;
+    outline: none;
+    font-family: Roboto;
+    background: transparent;
+    font-size: 13px;
+    color: gray;
+    float: left;
+}
+.sec-field >.input-field >span.caImage {
+    float: left;
+    border: 1px solid gray;
+    border-left: 0px solid;
+    height: 32px;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0px;
+}
 .PGI > .box > .content > .sec-optional {}
 .PGI > .box > .content > .sec-footer {}
 .horizontal-line {
