@@ -5,6 +5,7 @@
     }
 }
 */
+
 @media only screen and (max-width: 680px) {
     .PGI > .box {
         width: 90%;
@@ -12,8 +13,29 @@
     }
 }
 @media only screen and (max-width: 550px) {
-    .PGI > .box {
-        width: 90%;
-        height: 1000px;
+    .PGI > .box > .content > .sec-mandatory > .sec-field {
+        width: 100%;
+    }
+    .sec-field >.input-field >span.caImage{
+        width: 15%;
+    }
+    .sec-field >.input-field > input.input-cardField{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .sec-field >.input-field >span.caImage{
+        width: 20%;
+    }
+    .sec-field >.input-field > input.input-cardField{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .sec-field >.input-field >span.caImage{
+        width: 25%;
+    }
+    .sec-field >.input-field > input.input-cardField{
+        width: 75%;
     }
 }

@@ -108,6 +108,7 @@ body {
 .PGI > .box > .content > .amount > .label {
     float: right;
     width: 200px;
+    margin-bottom: 10px;
 }
 .PGI > .box > .content > .amount > .label > .cont {
     float: left;
@@ -154,7 +155,7 @@ body {
     color: gray;
 }
 .PGI > .box > .content > .sec-mandatory > .sec-field >.input-field {
-    padding: 3px;
+    padding: 5px;
     margin: 0px;
     box-sizing: border-box;
 }
@@ -190,6 +191,14 @@ body {
     box-sizing: border-box;
     width: 25%;
     padding: 0px 5px;
+}
+.sec-field > img.infosvg {
+    height: 12px;
+    width: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: -2px;
+    cursor: pointer;
 }
 .PGI > .box > .content > .sec-optional {}
 .PGI > .box > .content > .sec-footer {}
