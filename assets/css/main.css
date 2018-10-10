@@ -160,13 +160,15 @@ body {
 }
 .PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_ {
     width: 100%;
-    padding: 7px;
+    padding: 0 10px;
     border: 1px solid gray;
     outline: none;
-    font-family: Roboto;
+    font-family: Raleway;
     background: transparent;
     font-size: 13px;
     color: gray;
+    height: 32px;
+    font-weight: 400;
 }
 .sec-field >.input-field > input.input-cardField {
     width: 75%;
@@ -187,7 +189,7 @@ body {
     height: 32px;
     box-sizing: border-box;
     width: 25%;
-    padding: 0px;
+    padding: 0px 5px;
 }
 .PGI > .box > .content > .sec-optional {}
 .PGI > .box > .content > .sec-footer {}
