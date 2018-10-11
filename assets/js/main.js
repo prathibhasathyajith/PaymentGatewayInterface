@@ -28,6 +28,13 @@ $(document).ready(function () {
             }
         }
     });
+    $(".infosvg").hover(function(){
+       $(this).parent().children().eq(3).show(); 
+    });
+    $(".infosvg").mouseleave(function(){
+       $(this).parent().children().eq(3).hide(); 
+    });
+    
     //title-info font color
     $(".PGI > .box > .content > .title-info").css('color', invertColor(color, true));
     // name color

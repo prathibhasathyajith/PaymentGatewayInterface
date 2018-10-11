@@ -3,6 +3,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: #f3f3f3;
 }
 .PGI {
     width: 100%;
@@ -11,7 +12,7 @@ body {
     width: 600px;
     height: 550px;
     margin: 30px auto;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3);
 }
 .PGI > .box > .content {}
@@ -97,7 +98,7 @@ body {
 .PGI > .box > .content > .amount {
     width: 100%;
     height: 65px;
-    background: #f5f5f5;
+    background: #ffffff;
     box-sizing: border-box;
     padding: 17px;
     background-image: url(../image/card.svg);
@@ -150,9 +151,10 @@ body {
     font-family: Raleway;
     font-size: 11px;
     padding: 0px 10px;
-    margin: 0px;
+    margin: 5px;
     box-sizing: border-box;
-    color: gray;
+    color: black;
+    font-weight: 600;
 }
 .PGI > .box > .content > .sec-mandatory > .sec-field >.input-field {
     padding: 5px;
@@ -162,7 +164,7 @@ body {
 .PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_ {
     width: 100%;
     padding: 0 10px;
-    border: 1px solid gray;
+    border: 1px solid #d0d0d0;
     outline: none;
     font-family: Raleway;
     background: transparent;
@@ -171,21 +173,48 @@ body {
     height: 32px;
     font-weight: 400;
 }
+.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_y {
+    width: 50%;
+    padding: 0 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: Raleway;
+    background: transparent;
+    font-size: 14px;
+    color: black;
+    height: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_m {
+    width: 50%;
+    padding: 0 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: Raleway;
+    background: transparent;
+    font-size: 14px;
+    color: black;
+    height: 32px;
+    font-weight: 400;
+    float: left;
+    text-align: center;
+    border-right: 0px solid;
+}
 .sec-field >.input-field > input.input-cardField {
     width: 75%;
     padding: 0 10px;
     height: 32px;
-    border: 1px solid gray;
+    border: 1px solid #d0d0d0;
     outline: none;
     font-family: Roboto;
     background: transparent;
-    font-size: 13px;
-    color: gray;
-    float: left;
+    font-size: 14px;
+    color: black;
 }
 .sec-field >.input-field >span.caImage {
-    float: left;
-    border: 1px solid gray;
+    float: right;
+    border: 1px solid #d0d0d0;
     border-left: 0px solid;
     height: 32px;
     box-sizing: border-box;
@@ -207,4 +236,17 @@ body {
     height: 1px;
     background-color: #dcdcdc;
     margin: 5px auto;
+}
+.sec-field > div.tooltip {
+    position: absolute;
+    background: #e4e4e473;
+    width: 276px;
+    padding: 34px 0px;
+    margin: -42px 0 0 0;
+    display: none;
+}
+.sec-field > label> span.mandatoty {
+    font-family: serif;
+    color: #ff1717;
+    padding-left: 3px;
 }
