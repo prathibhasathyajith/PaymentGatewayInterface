@@ -16,11 +16,19 @@
     .PGI > .box > .content > .sec-mandatory > .sec-field {
         width: 100%;
     }
+    .PGI > .box > .content > .sec-mandatory > .sec-field_2 {
+        width: 49.5%;
+    }
     .sec-field >.input-field >span.caImage{
         width: 15%;
     }
     .sec-field >.input-field > input.input-cardField{
         width: 85%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .PGI > .box > .content > .sec-mandatory > .sec-field_2 {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 450px) {
