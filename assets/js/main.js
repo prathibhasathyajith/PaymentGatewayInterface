@@ -9,22 +9,18 @@ $(document).ready(function () {
                 $("#master_ca").hide();
                 $("#amex_ca").hide();
                 $("#visa_ca").show();
-                $(".caImage").css('background','transparent');
             } else if (type == 'amex') {
                 $("#master_ca").hide();
                 $("#visa_ca").hide();
                 $("#amex_ca").show();
-                $(".caImage").css('background','#0A7EC2');
             } else if (type == 'mastercard') {
                 $("#visa_ca").hide();
                 $("#amex_ca").hide();
                 $("#master_ca").show();
-                $(".caImage").css('background','transparent');
             } else {
                 $("#master_ca").hide();
                 $("#visa_ca").hide();
                 $("#amex_ca").hide();
-                $(".caImage").css('background','transparent');
             }
         }
     });
