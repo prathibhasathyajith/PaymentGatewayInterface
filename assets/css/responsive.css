@@ -30,6 +30,27 @@
     .PGI > .box > .content > .sec-mandatory > .sec-field_2 {
         width: 100%;
     }
+    table#optional {
+        border: 0;
+    }
+    table#optional tr {
+        display: block;
+    }
+    table#optional td {
+        display: block;
+    }
+    table#optional td div.input-field{
+        padding: 3px;
+        margin-left: 2px;
+    }
+    table#optional td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    table#optional td:last-child {
+        border-bottom: 0;
+    }
 }
 @media only screen and (max-width: 450px) {
     .sec-field >.input-field >span.caImage{

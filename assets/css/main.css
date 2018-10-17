@@ -1,4 +1,5 @@
 @import 'fonts.css';
+
 html,
 body {
     margin: 0;
@@ -230,13 +231,33 @@ body {
     margin: -2px;
     cursor: pointer;
 }
-.PGI > .box > .content > .sec-optional {}
+.PGI > .box > .content > .sec-optional {
+    padding: 17px;
+}
+.PGI > .box > .content > .sec-optional > .sec-field {
+    padding: 1px;
+}
+
+.PGI > .box > .content > .sec-optional >table .input_ {
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: Raleway;
+    background: transparent;
+    font-size: 13px;
+    color: gray;
+    height: 32px;
+    font-weight: 400;
+}
 .PGI > .box > .content > .sec-footer {}
 .horizontal-line {
-    width: 92%;
+    width: 100%;
     height: 1px;
     background-color: #dcdcdc;
+    background: linear-gradient(to right, #ffffff 0%, #c6c6c6 25%, #c6c6c6 75%, #ffffff 100%);
     margin: 5px auto;
+    float: left;
 }
 .sec-field > div.tooltip {
     position: absolute;
@@ -244,8 +265,40 @@ body {
     margin: -30px 0 0 30px;
     display: none;
 }
-.sec-field > label> span.mandatoty {
+.sec-field > label> span.mandatory {
     font-family: serif;
     color: #ff1717;
     padding-left: 3px;
 }
+
+
+table#optional {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+table#optional td div.input-field {
+    padding: 5px;
+    box-sizing: border-box;
+}
+table#optional th {
+    font-size: .85em;
+    letter-spacing: .1em;
+}
+
+
+.sec-field > .input-field > .wv-captchaImg{
+    width: 100px;
+    height: 35px;
+    float: left;
+}
+.sec-field > .input-field > .wv-refresh{
+    height: 25px;
+    padding: 5px;
+    float: left;
+}
+.PGI > .box > .content > .sec-mandatory > .sec-field_3{
+    width: 100%;
+}
+

@@ -52,7 +52,7 @@
                     <div class="name merchat-font merchat-font-style">Nike. Inc</div>
                     <div class="theme merchat-font">Just do it</div>
                 </div>
-                <div class="horizontal-line"></div>
+                <div class="horizontal-line" style="float: none;"></div>
                 <div class="title-details merchat-font">
                     <div class="title">
                         Enter your credit card details
@@ -71,17 +71,16 @@
                 <div class="horizontal-line"></div>
                 <div class="sec-mandatory">
                     <div class="sec-field">
-                        <label>Name on Card<span class="mandatoty">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                        <label>Name on Card<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                         <div class="input-field">
-                            <input class="input_"/>
+                            <input class="input_" />
                         </div>
                         <div class="tooltip">
                             <img src="assets/image/info/cardname.svg" width="auto" height="100" alt="Name on Card info" />
                         </div>
                     </div>
-
                     <div class="sec-field">
-                        <label>Credit/Debit Card Number<span class="mandatoty">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                        <label>Credit/Debit Card Number<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                         <div class="input-field">
                             <input class="input-cardField" />
                             <span class="caImage">
@@ -94,19 +93,17 @@
                             <img src="assets/image/info/cardnum.svg" width="auto" height="100" alt="Credit/Debit Card Number info" />
                         </div>
                     </div>
-
                     <div class="sec-field sec-field_2">
-                        <label>CVV Value<span class="mandatoty">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                        <label>CVV Value<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                         <div class="input-field">
-                            <input class="input_" maxlength="5"/>
+                            <input class="input_" maxlength="5" />
                         </div>
                         <div class="tooltip">
                             <img src="assets/image/info/cvv.svg" width="auto" height="100" alt="CVV info" />
                         </div>
                     </div>
-
                     <div class="sec-field sec-field_2">
-                        <label>Expiry Date<span class="mandatoty">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                        <label>Expiry Date<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                         <div class="input-field">
                             <input class="input_m" maxlength="2" placeholder="Month" />
                             <input class="input_y" maxlength="2" placeholder="Year" />
@@ -115,9 +112,33 @@
                             <img src="assets/image/info/exdate.svg" width="auto" height="100" alt="Expiry Date info" />
                         </div>
                     </div>
-
+                    <div class="sec-field sec-field_3">
+                        <label>Word Verification<span class="mandatory">*</span></label>
+                        <div class="input-field">
+                            <img src="assets/image/cc/card.svg" class="wv-captchaImg">
+                            <img src="assets/image/refresh.svg" class="wv-refresh">
+                            <input class="" maxlength="2" placeholder="Type here" />
+                        </div>
+                    </div>
                 </div>
-                <div class="sec-optional"></div>
+                <div class="horizontal-line"></div>
+                
+                <div class="sec-optional">
+                    <table id="optional">
+                        <tr>
+                            <td>
+                                <div class="input-field">
+                                    <input class="input_" placeholder="Email Address" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input class="input_" placeholder="Mobile Number" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="sec-footer"></div>
             </div>
         </div>
