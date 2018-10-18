@@ -10,8 +10,8 @@ body {
 }
 .PGI > .box {
     width: 600px;
-    height: 550px;
-    margin: 30px auto;
+    height: auto;
+    margin: 50px auto;
     background-color: #ffffff;
     box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3);
 }
@@ -95,7 +95,7 @@ body {
 .PGI > .box > .content > .title-details > .detail {
     font-size: 9px;
 }
-.PGI > .box > .content > .amount {
+.PGI > .box > .content > .sec-form > .amount {
     width: 100%;
     height: 65px;
     background: #ffffff;
@@ -106,48 +106,48 @@ body {
     background-position: 102% top;
     background-size: 62px;
 }
-.PGI > .box > .content > .amount > .label {
+.PGI > .box > .content > .sec-form > .amount > .label {
     float: right;
     width: 200px;
     margin-bottom: 10px;
 }
-.PGI > .box > .content > .amount > .label > .cont {
+.PGI > .box > .content > .sec-form > .amount > .label > .cont {
     float: left;
     height: 20px;
-    padding: 9px 5px 1px 15px;
+    padding: 9px 9px 1px 15px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     font-size: 10px;
-    box-shadow: 9px 0px 20px 0px rgba(0, 0, 0, 0.6);
+    /*    box-shadow: 9px 0px 20px 0px rgba(0, 0, 0, 0.6);*/
 }
-.PGI > .box > .content > .amount > .label > .line {
+.PGI > .box > .content > .sec-form > .amount > .label > .line {
     height: 20px;
     padding: 5px 0;
     width: 1px;
     float: left;
 }
-.PGI > .box > .content > .amount > .label > .amnt {
+.PGI > .box > .content > .sec-form > .amount > .label > .amnt {
     height: 20px;
     float: left;
-    padding: 7px 15px 3px 5px;
+    padding: 7px 15px 3px 9px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    box-shadow: 6px 0px 20px 0px rgba(0, 0, 0, 0.6);
+    /*    box-shadow: 6px 0px 20px 0px rgba(0, 0, 0, 0.6);*/
     font-family: Roboto;
     font-size: 14px;
 }
 #ccode {
     font-size: 10px;
 }
-.PGI > .box > .content > .sec-mandatory {
+.PGI > .box > .content > .sec-form > .sec-mandatory {
     padding: 17px 35px;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field {
     padding: 1px;
     float: left;
     width: 49.5%;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field >label {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >label {
     font-family: Raleway;
     font-size: 11px;
     padding: 0px 10px;
@@ -156,12 +156,12 @@ body {
     color: black;
     font-weight: 600;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field {
     padding: 5px;
     margin-left: 2px;
     box-sizing: border-box;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_ {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_ {
     width: 100%;
     padding: 0 10px;
     border: 1px solid #d0d0d0;
@@ -173,7 +173,7 @@ body {
     height: 32px;
     font-weight: 400;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_y {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_y {
     width: 50%;
     padding: 0 10px;
     border: 1px solid #d0d0d0;
@@ -186,7 +186,7 @@ body {
     font-weight: 400;
     text-align: center;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field >.input-field > input.input_m {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_m {
     width: 50%;
     padding: 0 10px;
     border: 1px solid #d0d0d0;
@@ -230,13 +230,13 @@ body {
     margin: -2px;
     cursor: pointer;
 }
-.PGI > .box > .content > .sec-optional {
-    padding: 35px;
+.PGI > .box > .content > .sec-form > .sec-optional {
+    padding: 10px 35px;
 }
-.PGI > .box > .content > .sec-optional > .sec-field {
+.PGI > .box > .content > .sec-form > .sec-optional > .sec-field {
     padding: 1px;
 }
-.PGI > .box > .content > .sec-optional >table .input_ {
+.PGI > .box > .content > .sec-form > .sec-optional >table .input_ {
     width: 100%;
     padding: 0 10px;
     border: 1px solid #d0d0d0;
@@ -248,7 +248,6 @@ body {
     height: 32px;
     font-weight: 400;
 }
-.PGI > .box > .content > .sec-footer {}
 .horizontal-line {
     width: 100%;
     height: 1px;
@@ -283,7 +282,7 @@ table#optional th {
     letter-spacing: .1em;
 }
 .sec-field > .input-field > .input_captcha {
-    width: 25%;
+    width: 20.5%;
     padding: 0 10px;
     border: 1px solid #d0d0d0;
     outline: none;
@@ -299,13 +298,96 @@ table#optional th {
     height: 32px;
     float: left;
     border: 1px solid #d6d6d6;
+    box-sizing: border-box;
 }
 .sec-field > .input-field > .wv-refresh {
-    height: 25px;
-    padding: 4px 10px;
+    height: 32px;
+    padding: 3px 10px;
     float: left;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid #d6d6d6;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    box-sizing: border-box;
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field_3 {
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field_3 {
     width: 100%;
 }
+.PGI > .box > .content > .sec-form > .sec-button {
+    width: 100%;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    text-align: right;
+    background: #d8d8d8;
+}
+.sec-button > .cancelbtn {
+    margin-right: -4px;
+    padding: 8px 14px;
+    outline: none;
+    border: 1px solid #004073;
+    border-right: 0px solid;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: white;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background: #ff9a35;
+    background: -moz-linear-gradient(top, #ff9a35 0%, #ff9b28 50%, #ff9b28 50%, #ff7c00 51%, #ff7f04 100%);
+    background: -webkit-linear-gradient(top, #ff9a35 0%, #ff9b28 50%, #ff9b28 50%, #ff7c00 51%, #ff7f04 100%);
+    background: linear-gradient(to bottom, #ff9a35 0%, #ff9b28 50%, #ff9b28 50%, #ff7c00 51%, #ff7f04 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff9a35', endColorstr='#ff7f04', GradientType=0);
+}
+.sec-button > .paybtn {
+    padding: 8px 50px;
+    outline: none;
+    border: 1px solid #004073;
+    border-left: 0px solid;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: white;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background: #3b9bef;
+    background: -moz-linear-gradient(top, #3b9bef 0%, #479ced 50%, #479ced 50%, #3690f0 51%, #1e69de 100%);
+    background: -webkit-linear-gradient(top, #3b9bef 0%, #479ced 50%, #479ced 50%, #3690f0 51%, #1e69de 100%);
+    background: linear-gradient(to bottom, #3b9bef 0%, #479ced 50%, #479ced 50%, #3690f0 51%, #1e69de 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3b9bef', endColorstr='#1e69de', GradientType=0);
+}
+.sec-button > .cancelbtn:hover {
+    background: #ff7f04;
+    background: -moz-linear-gradient(top, #ff7f04 0%, #ff7f04 100%);
+    background: -webkit-linear-gradient(top, #ff7f04 0%, #ff7f04 100%);
+    background: linear-gradient(to bottom, #ff7f04 0%, #ff7f04 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff7f04', endColorstr='#ff7f04', GradientType=0);
+}
+.sec-button > .paybtn:hover {
+    background: #1e69de;
+    background: -moz-linear-gradient(top, #1e69de 1%, #1e69de 100%);
+    background: -webkit-linear-gradient(top, #1e69de 1%, #1e69de 100%);
+    background: linear-gradient(to bottom, #1e69de 1%, #1e69de 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#1e69de', GradientType=0);
+}
+.sec-button > .caption {
+    padding: 3px 5px;
+    float: left;
+    margin: 11px 8px;
+    font-size: 8px;
+    font-family: Raleway;
+    border: 1px solid #8e8e8e;
+    color: #1d1d1d;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+.sec-button > .caption a{
+    color: #1d1d1d;
+    text-decoration: none;
+}
+    
+
+.PGI > .box > .content > .sec-form > .sec-footer {}

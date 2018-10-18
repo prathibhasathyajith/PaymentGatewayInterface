@@ -36,10 +36,10 @@ $(document).ready(function () {
     // name color
     $(".PGI > .box > .content > .merchant > .name").css('color', ColorLuminance(color, -0.6));
     //amount color
-    $(".PGI > .box > .content > .amount > .label > .cont").css('color', invertColor(color, true));
-    $(".PGI > .box > .content > .amount > .label > .amnt").css('color', invertColor(color, true));
+    $(".PGI > .box > .content > .sec-form > .amount > .label > .cont").css('color', invertColor(color, true));
+    $(".PGI > .box > .content > .sec-form > .amount > .label > .amnt").css('color', invertColor(color, true));
     // line background color
-    $(".PGI > .box > .content > .amount > .label > .line").css('background', invertColor(color, true));
+    $(".PGI > .box > .content > .sec-form > .amount > .label > .line").css('background', invertColor(color, true));
 
     //message close button
     $(".PGI > .box > .content > .message > .close").click(function () {

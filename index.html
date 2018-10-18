@@ -61,84 +61,90 @@
                         Please make sure you fillin all mandatory infromation marked with *
                     </div>
                 </div>
-                <div class="amount">
-                    <div class="label merchat-font">
-                        <div class="cont merchat-bg-color">Amount</div>
-                        <div class="line"></div>
-                        <div class="amnt merchat-bg-color"><span id="ccode">LKR</span> 1234.45</div>
-                    </div>
-                </div>
-                <div class="horizontal-line"></div>
-                <div class="sec-mandatory">
-                    <div class="sec-field">
-                        <label>Name on Card<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
-                        <div class="input-field">
-                            <input class="input_" />
-                        </div>
-                        <div class="tooltip">
-                            <img src="assets/image/info/cardname.svg" width="auto" height="100" alt="Name on Card info" />
+                <form action="" method="" class="sec-form">
+                    <div class="amount">
+                        <div class="label merchat-font">
+                            <div class="cont merchat-bg-color">Amount</div>
+                            <div class="line"></div>
+                            <div class="amnt merchat-bg-color"><span id="ccode">LKR</span> 1234.45</div>
                         </div>
                     </div>
-                    <div class="sec-field">
-                        <label>Credit/Debit Card Number<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
-                        <div class="input-field">
-                            <input class="input-cardField" />
-                            <span class="caImage">
+                    <div class="horizontal-line"></div>
+                    <div class="sec-mandatory">
+                        <div class="sec-field">
+                            <label>Name on Card<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <div class="input-field">
+                                <input class="input_" />
+                            </div>
+                            <div class="tooltip">
+                                <img src="assets/image/info/cardname.svg" width="auto" height="100" alt="Name on Card info" />
+                            </div>
+                        </div>
+                        <div class="sec-field">
+                            <label>Credit/Debit Card Number<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <div class="input-field">
+                                <input class="input-cardField" />
+                                <span class="caImage">
                                 <img src="assets/image/cc/visa.svg" width="100%" height="30" alt="Card Association" id="visa_ca" style="display:none"/>
                                 <img src="assets/image/cc/amex.svg" width="100%" height="30" alt="Card Association" id="amex_ca" style="display:none"/>
                                 <img src="assets/image/cc/master.svg" width="100%" height="30" alt="Card Association" id="master_ca" style="display:none"/>
                             </span>
+                            </div>
+                            <div class="tooltip">
+                                <img src="assets/image/info/cardnum.svg" width="auto" height="100" alt="Credit/Debit Card Number info" />
+                            </div>
                         </div>
-                        <div class="tooltip">
-                            <img src="assets/image/info/cardnum.svg" width="auto" height="100" alt="Credit/Debit Card Number info" />
+                        <div class="sec-field sec-field_2">
+                            <label>CVV Value<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <div class="input-field">
+                                <input class="input_" maxlength="5" placeholder="Security Code"/>
+                            </div>
+                            <div class="tooltip">
+                                <img src="assets/image/info/cvv.svg" width="auto" height="100" alt="CVV info" />
+                            </div>
+                        </div>
+                        <div class="sec-field sec-field_2">
+                            <label>Expiry Date<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <div class="input-field">
+                                <input class="input_m" maxlength="2" placeholder="MM" />
+                                <input class="input_y" maxlength="2" placeholder="YY" />
+                            </div>
+                            <div class="tooltip">
+                                <img src="assets/image/info/exdate.svg" width="auto" height="100" alt="Expiry Date info" />
+                            </div>
+                        </div>
+                        <div class="sec-field sec-field_3">
+                            <label>Word Verification<span class="mandatory">*</span></label>
+                            <div class="input-field">
+                                <img src="assets/image/word-verification.gif" class="wv-captchaImg">
+                                <img src="assets/image/refresh.svg" class="wv-refresh">
+                                <input class="input_captcha" placeholder="Type here" />
+                            </div>
                         </div>
                     </div>
-                    <div class="sec-field sec-field_2">
-                        <label>CVV Value<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
-                        <div class="input-field">
-                            <input class="input_" maxlength="5" />
-                        </div>
-                        <div class="tooltip">
-                            <img src="assets/image/info/cvv.svg" width="auto" height="100" alt="CVV info" />
-                        </div>
+                    <div class="horizontal-line"></div>
+                    <div class="sec-optional">
+                        <table id="optional">
+                            <tr>
+                                <td>
+                                    <div class="input-field">
+                                        <input class="input_" placeholder="Email Address" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-field">
+                                        <input class="input_" placeholder="Mobile Number" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="sec-field sec-field_2">
-                        <label>Expiry Date<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
-                        <div class="input-field">
-                            <input class="input_m" maxlength="2" placeholder="Month" />
-                            <input class="input_y" maxlength="2" placeholder="Year" />
-                        </div>
-                        <div class="tooltip">
-                            <img src="assets/image/info/exdate.svg" width="auto" height="100" alt="Expiry Date info" />
-                        </div>
+                    <div class="sec-button">
+                        <input type="button" value="Cancel" name="cancel" class="cancelbtn" />
+                        <input type="submit" value="Pay" name="pay"  class="paybtn"/>
+                        <div class="caption"><a href="https://www.epictechnology.lk" >powered by Epic Lanka (PVT) LTD</a></div>
                     </div>
-                    <div class="sec-field sec-field_3">
-                        <label>Word Verification<span class="mandatory">*</span></label>
-                        <div class="input-field">
-                            <img src="assets/image/word-verification.gif" class="wv-captchaImg">
-                            <img src="assets/image/refresh.svg" class="wv-refresh">
-                            <input class="input_captcha" placeholder="Type here" />
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-line"></div>
-                
-                <div class="sec-optional">
-                    <table id="optional">
-                        <tr>
-                            <td>
-                                <div class="input-field">
-                                    <input class="input_" placeholder="Email Address" />
-                                </div>
-                            </td>
-                            <td>
-                                <div class="input-field">
-                                    <input class="input_" placeholder="Mobile Number" />
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                </form>
                 <div class="sec-footer"></div>
             </div>
         </div>
