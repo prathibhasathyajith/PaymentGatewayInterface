@@ -1,5 +1,4 @@
 @import 'fonts.css';
-
 html,
 body {
     margin: 0;
@@ -141,7 +140,7 @@ body {
     font-size: 10px;
 }
 .PGI > .box > .content > .sec-mandatory {
-    padding: 17px;
+    padding: 17px 35px;
 }
 .PGI > .box > .content > .sec-mandatory > .sec-field {
     padding: 1px;
@@ -232,12 +231,11 @@ body {
     cursor: pointer;
 }
 .PGI > .box > .content > .sec-optional {
-    padding: 17px;
+    padding: 35px;
 }
 .PGI > .box > .content > .sec-optional > .sec-field {
     padding: 1px;
 }
-
 .PGI > .box > .content > .sec-optional >table .input_ {
     width: 100%;
     padding: 0 10px;
@@ -270,8 +268,6 @@ body {
     color: #ff1717;
     padding-left: 3px;
 }
-
-
 table#optional {
     margin: 0;
     padding: 0;
@@ -286,19 +282,30 @@ table#optional th {
     font-size: .85em;
     letter-spacing: .1em;
 }
-
-
-.sec-field > .input-field > .wv-captchaImg{
+.sec-field > .input-field > .input_captcha {
+    width: 25%;
+    padding: 0 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: Raleway;
+    background: transparent;
+    font-size: 13px;
+    color: gray;
+    height: 32px;
+    font-weight: 400;
+}
+.sec-field > .input-field > .wv-captchaImg {
     width: 100px;
-    height: 35px;
+    height: 32px;
     float: left;
+    border: 1px solid #d6d6d6;
 }
-.sec-field > .input-field > .wv-refresh{
+.sec-field > .input-field > .wv-refresh {
     height: 25px;
-    padding: 5px;
+    padding: 4px 10px;
     float: left;
+    cursor: pointer
 }
-.PGI > .box > .content > .sec-mandatory > .sec-field_3{
+.PGI > .box > .content > .sec-mandatory > .sec-field_3 {
     width: 100%;
 }
-

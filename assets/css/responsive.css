@@ -12,7 +12,7 @@
         height: 1000px;
     }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 615px) {
     .PGI > .box > .content > .sec-mandatory > .sec-field {
         width: 100%;
     }
@@ -25,8 +25,11 @@
     .sec-field >.input-field > input.input-cardField{
         width: 85%;
     }
+    .sec-field > .input-field > .input_captcha{
+        width: 35%;
+    }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
     .PGI > .box > .content > .sec-mandatory > .sec-field_2 {
         width: 100%;
     }
@@ -51,6 +54,9 @@
     table#optional td:last-child {
         border-bottom: 0;
     }
+    .sec-field > .input-field > .input_captcha{
+        width: 40%;
+    }
 }
 @media only screen and (max-width: 450px) {
     .sec-field >.input-field >span.caImage{
@@ -59,6 +65,13 @@
     .sec-field >.input-field > input.input-cardField{
         width: 80%;
     }
+    .sec-field > .input-field > .input_captcha{
+        width: 40%;
+    }
+    .sec-field > .input-field > .wv-refresh{
+        height: 20px;
+        padding: 7px 5px;
+    }
 }
 @media only screen and (max-width: 350px) {
     .sec-field >.input-field >span.caImage{
@@ -66,5 +79,8 @@
     }
     .sec-field >.input-field > input.input-cardField{
         width: 75%;
+    }
+    .sec-field > .input-field > .input_captcha{
+        width: 100%;
     }
 }
