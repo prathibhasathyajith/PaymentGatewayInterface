@@ -14,7 +14,27 @@
 </style>
 
 <body>
-    <iframe src="http://127.0.0.1:52934/index.html?pay=Pay"></iframe>
+    <form action="http://192.168.1.24:7301/EPIC_IPG/IPGMerchantAddOnServlet" method="POST" target="myIframe">
+        <input hidden="hidden" name="currencyCode" value="144" />
+        <input hidden="hidden" name="orderid" value="123" />
+        <input hidden="hidden" name="merchantId" value="000000001000066" />
+        <input hidden="hidden" name="terminalId" value="88888888" />
+        <input hidden="hidden" name="txnRefNo" value="84" />
+        <input hidden="hidden" name="emerchantId" value="B035BA39CCFD9E660C0033597C869237" />
+        <input hidden="hidden" name="key" value="" />
+        <input hidden="hidden" name="byteSignedDataString" value="A598283A30FAA41786CD1EE7981B7D69DF801572B78B4C30A9EA87406AC26908E2ACBF0D59E720D9A96DD3993C4FAEA0D5A064A36C17971BF2772BC7A501D69BD896F17A25F005931E1D7E782E25BBC6346C77D9615A865CFE50B81689570169AE2346D4E666232309022C94754F55A88C58E5C58948969FDAE0867EF9B99FAE" />
+        <input hidden="hidden" name="url" value="http://localhost:7001/EPIC_IPG/IPGMerchantAddOnServlet" />
+        <input hidden="hidden" name="amount" value="100" />
+        <input hidden="hidden" name="dateofregistry" value="2014-10-24" />
+        <input hidden="hidden" name="merchantType" value="1234" />
+        <input hidden="hidden" name="radio" value="VISA" />
+        
+        <input type="submit" value="sub" />
+    </form>
+<!--    <iframe src="http://127.0.0.1:52934/index.html?pay=Pay"></iframe>-->
+<!--    <iframe name="myIframe"></iframe>-->
+<!--    https://paymentiframe.com/-->
+    <iframe src="https://paymentiframe.com/tag.cgi?u=https%3A%2F%2Fpaymentiframe.com%2Fsubmit.html&k=pk_0664cKxtpzh9waTUen65TTQtCUgp0" frameBorder=0 height=230px width=350px></iframe>
 </body>
 
 </html>
