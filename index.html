@@ -6,7 +6,7 @@
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <script>
         var color = '#364E63';
-
+        
     </script>
     <style>
         .merchat-bg-color {
@@ -38,7 +38,7 @@
                 </div>
                 <div class="message merchat-font">
                     <div class="msg">
-                        Error : Please fill all the fields appers in red
+                        Error : Please fill all the fields appers in red line
                     </div>
                     <button type="button" class="close">&times;</button>
                 </div>
@@ -72,18 +72,18 @@
                     <div class="horizontal-line"></div>
                     <div class="sec-mandatory">
                         <div class="sec-field">
-                            <label>Name on Card<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <label class="">Name on Card<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                             <div class="input-field">
-                                <input class="input_" />
+                                <input class="input_ " type="text" />
                             </div>
                             <div class="tooltip">
                                 <img src="assets/image/info/cardname.svg" width="auto" height="100" alt="Name on Card info" />
                             </div>
                         </div>
                         <div class="sec-field">
-                            <label>Credit/Debit Card Number<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <label class="mandatory_msgsec_label">Credit/Debit Card Number<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                             <div class="input-field">
-                                <input class="input-cardField" />
+                                <input class="input-cardField mandatory_msgsec" />
                                 <span class="caImage">
                                 <img src="assets/image/cc/visa.svg" width="100%" height="30" alt="Card Association" id="visa_ca" style="display:none"/>
                                 <img src="assets/image/cc/amex.svg" width="100%" height="30" alt="Card Association" id="amex_ca" style="display:none"/>
@@ -95,16 +95,16 @@
                             </div>
                         </div>
                         <div class="sec-field sec-field_2">
-                            <label>CVV Value<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <label class="mandatory_msgsec_label">CVV Value<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                             <div class="input-field">
-                                <input class="input_" maxlength="5" placeholder="Security Code"/>
+                                <input class="input_ mandatory_msgsec" maxlength="4" placeholder="Security Code" />
                             </div>
                             <div class="tooltip">
                                 <img src="assets/image/info/cvv.svg" width="auto" height="100" alt="CVV info" />
                             </div>
                         </div>
                         <div class="sec-field sec-field_2">
-                            <label>Expiry Date<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
+                            <label class="">Expiry Date<span class="mandatory">*</span></label><img class="infosvg" src="assets/image/info.svg" />
                             <div class="input-field">
                                 <input class="input_m" maxlength="2" placeholder="MM" />
                                 <input class="input_y" maxlength="2" placeholder="YY" />
@@ -114,11 +114,11 @@
                             </div>
                         </div>
                         <div class="sec-field sec-field_3">
-                            <label>Word Verification<span class="mandatory">*</span></label>
+                            <label class="">Word Verification<span class="mandatory">*</span></label>
                             <div class="input-field">
                                 <img src="assets/image/word-verification.gif" class="wv-captchaImg">
                                 <img src="assets/image/refresh.svg" class="wv-refresh">
-                                <input class="input_captcha" placeholder="Type here" />
+                                <input class="input_captcha" type="text" placeholder="Type here" />
                             </div>
                         </div>
                     </div>
@@ -141,8 +141,8 @@
                     </div>
                     <div class="sec-button">
                         <input type="button" value="Cancel" name="cancel" class="cancelbtn" />
-                        <input type="submit" value="Pay" name="pay"  class="paybtn"/>
-                        <div class="caption"><a href="https://www.epictechnology.lk" >powered by Epic Lanka (PVT) LTD</a></div>
+                        <input type="submit" value="Pay" name="pay" class="paybtn" />
+                        <div class="caption"><a href="https://www.epictechnology.lk">powered by Epic Lanka (PVT) LTD</a></div>
                     </div>
                 </form>
                 <div class="sec-footer"></div>

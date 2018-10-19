@@ -13,7 +13,7 @@ body {
     height: auto;
     margin: 50px auto;
     background-color: #ffffff;
-    box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3);
+    box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3), 0 6px 4px 0px #9a9a9a30;
 }
 .PGI > .box > .content {}
 .PGI > .box > .content > .title-info {
@@ -164,10 +164,12 @@ body {
 .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_ {
     width: 100%;
     padding: 0 10px;
-    border: 1px solid #d0d0d0;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
     outline: none;
     font-family: Raleway;
-    background: transparent;
+    background: #efefef;
+    /*    background: transparent;*/
     font-size: 13px;
     color: gray;
     height: 32px;
@@ -176,10 +178,12 @@ body {
 .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_y {
     width: 50%;
     padding: 0 10px;
-    border: 1px solid #d0d0d0;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
     outline: none;
     font-family: Raleway;
-    background: transparent;
+    background: #efefef;
+    /*    background: transparent;*/
     font-size: 12px;
     color: black;
     height: 32px;
@@ -189,38 +193,44 @@ body {
 .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_m {
     width: 50%;
     padding: 0 10px;
-    border: 1px solid #d0d0d0;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
     outline: none;
     font-family: Raleway;
-    background: transparent;
+    /*    background: transparent;*/
+    background: #efefef;
     font-size: 12px;
     color: black;
     height: 32px;
     font-weight: 400;
     float: left;
     text-align: center;
-    border-right: 0px solid;
+    border-right: 1px solid #d0d0d0;
 }
 .sec-field >.input-field > input.input-cardField {
     width: 75%;
     padding: 0 10px;
     height: 32px;
-    border: 1px solid #d0d0d0;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
     border-right: 0px solid;
     outline: none;
     font-family: Roboto;
-    background: transparent;
+    background: #efefef;
+    /*    background: transparent;*/
     font-size: 14px;
     color: black;
 }
 .sec-field >.input-field >span.caImage {
     float: right;
-    border: 1px solid #d0d0d0;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
     border-left: 0px solid;
     height: 32px;
     box-sizing: border-box;
     width: 25%;
     padding: 0px 5px;
+    background: #e4e4e4;
 }
 .sec-field > img.infosvg {
     height: 12px;
@@ -242,7 +252,8 @@ body {
     border: 1px solid #d0d0d0;
     outline: none;
     font-family: Raleway;
-    background: transparent;
+    background: #efefef;
+    /*    background: transparent;*/
     font-size: 13px;
     color: gray;
     height: 32px;
@@ -284,10 +295,12 @@ table#optional th {
 .sec-field > .input-field > .input_captcha {
     width: 20.5%;
     padding: 0 10px;
-    border: 1px solid #d0d0d0;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
     outline: none;
     font-family: Raleway;
-    background: transparent;
+    /*    background: transparent;*/
+    background: #efefef;
     font-size: 13px;
     color: gray;
     height: 32px;
@@ -307,8 +320,11 @@ table#optional th {
     cursor: pointer;
     border: 1px solid #d6d6d6;
     border-left: 0px solid;
-    border-right: 0px solid;
+    /*    border-right: 0px solid;*/
     box-sizing: border-box;
+}
+.sec-field > .input-field > img.wv-refresh:hover {
+    background: #eaeaea;
 }
 .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field_3 {
     width: 100%;
@@ -384,10 +400,15 @@ table#optional th {
     border-radius: 4px;
     letter-spacing: 0.5px;
 }
-.sec-button > .caption a{
+.sec-button > .caption a {
     color: #1d1d1d;
     text-decoration: none;
 }
-    
+.mandatory_msgsec {
+    border-bottom: 1px solid #ff2828 !important;
+}
+.mandatory_msgsec_label{
+    color:#ff2828 !important;
+}
 
 .PGI > .box > .content > .sec-form > .sec-footer {}

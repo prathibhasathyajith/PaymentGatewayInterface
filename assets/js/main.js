@@ -1,4 +1,26 @@
 $(document).ready(function () {
+
+    // inside Iframe
+    if (inIframe()) {
+        $('.merchant > .logo').hide();
+        $('.merchant > .logo-bank > img').css({
+            'border-left': '0px solid',
+            'padding-bottom': '10px'
+        });
+        $('.merchant > .name').hide();
+        $('.merchant > .theme').hide();
+        $('.horizontal-line').eq(0).hide();
+        $('.title-details').hide();
+        $('.sec-form > .amount').hide();
+        $('.PGI > .box').css({
+            'width': '100%',
+            'height': '100%',
+            'margin': '0px'
+        });
+    }
+
+
+
     $("#master_ca").hide();
     $("#visa_ca").hide();
     $("#amex_ca").hide();
@@ -24,13 +46,13 @@ $(document).ready(function () {
             }
         }
     });
-    $(".infosvg").hover(function(){
-       $(this).parent().children().eq(3).show(); 
+    $(".infosvg").hover(function () {
+        $(this).parent().children().eq(3).show();
     });
-    $(".infosvg").mouseleave(function(){
-       $(this).parent().children().eq(3).hide(); 
+    $(".infosvg").mouseleave(function () {
+        $(this).parent().children().eq(3).hide();
     });
-    
+
     //title-info font color
     $(".PGI > .box > .content > .title-info").css('color', invertColor(color, true));
     // name color
@@ -44,12 +66,20 @@ $(document).ready(function () {
     //message close button
     $(".PGI > .box > .content > .message > .close").click(function () {
         $(".PGI > .box > .content > .message").slideUp(100);
+        $('.sec-field > label').removeClass('mandatory_msgsec_label');
+        $('.sec-field > .input-field > input').removeClass('mandatory_msgsec');
     });
 
-
-
-
 });
+
+//return true if inside an iframe
+function inIframe() {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
 
 function ColorLuminance(hex, lum) {
 
