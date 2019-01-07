@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#repbtn").click(function(){
+                $(".row > .replybox").show();
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div id="subject_f1">Account Main</div>
+                <div class="icon_in">inbox</div>
+                
+            </div>
+            <div class="row">
+                <div class="line2"></div>
+            </div>
+            <div class="row">
+                <div id="userName_f1">Prathibha Sathyajith</div>
+                
+                <div id="createDate_f1">2018-10-25 16:11:32</div>
+                <div class="icon_pin"><span class="glyphicon glyphicon-paperclip"></span></div>
+                <div class="recipientName_f1">To <span>admin</span></div>
+            </div>
+            
+            <div class="row">
+                <div class="msg">
+                    Message section test message from client or other sources it must on not have attachments or something else
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="count"><span>3</span> Attachements</div>
+                <div class="attchements">
+                    <div class="file">Test.png</div>
+                    <div class="file">Test.jpg</div>
+                    <div class="file">New Word doc.doc</div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="replybtn">
+                    <button type="button" class="btn btn-default btn-sm" id="repbtn">
+                        <span class="glyphicon glyphicon-share-alt"></span> Reply
+                    </button>
+                </div>
+                <div class="replybox">
+                    <div class="replymsg">
+                        <div class="form-group">
+                            <label for="comment"><span class="glyphicon glyphicon-share-alt"></span> Reply Message</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input class="btn btn-default btn-sm" type="button" value="Send" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer"></div>
+            </div>
+        </form>
+        <form></form>
+        <form></form>
+    </div>
+</body>
+
+</html>

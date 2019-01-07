@@ -1,11 +1,12 @@
 <html>
 <style>
-    body{
+    body {
         margin: 0;
     }
+    
     iframe {
         width: 55%;
-        height: 95%;
+        height: 75%;
         border: 0px solid;
         margin: 0;
         padding: 0;
@@ -28,13 +29,101 @@
         <input hidden="hidden" name="dateofregistry" value="2014-10-24" />
         <input hidden="hidden" name="merchantType" value="1234" />
         <input hidden="hidden" name="radio" value="VISA" />
-        
-        <input type="submit" value="sub" />
+
+        <input type="submit" value="submit" />
     </form>
-<!--    <iframe src="http://127.0.0.1:52934/index.html?pay=Pay"></iframe>-->
-<!--    <iframe name="myIframe"></iframe>-->
-<!--    https://paymentiframe.com/-->
-    <iframe src="https://paymentiframe.com/tag.cgi?u=https%3A%2F%2Fpaymentiframe.com%2Fsubmit.html&k=pk_0664cKxtpzh9waTUen65TTQtCUgp0" frameBorder=0 height=230px width=350px></iframe>
+    <!--    <iframe id="myFrame" src="http://127.0.0.1:52934/index.html?pay=Pay"></iframe>-->
+        <iframe id="myFrame" src="http://127.0.0.1:53594/index.html"></iframe>
+<!--    <iframe name="myIframe" id="myFrame"></iframe>-->
+    <!--    https://paymentiframe.com/-->
+    <!--        <iframe id="myFrame" src="https://paymentiframe.com/tag.cgi?u=https%3A%2F%2Fpaymentiframe.com%2Fsubmit.html&k=pk_0664cKxtpzh9waTUen65TTQtCUgp0" frameBorder=0 height=230px width=350px></iframe>-->
+    <input type="button" onclick="messageToIframe('submit')" value="Submit outside" />
+    <input type="button" onclick="messageToIframe('validate')" value="Validate outside" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        function vali() {
+            $.ajax({
+                url: 'http://192.168.1.24:7301/EPIC_IPG/IPGMerchantTransactionValidateServlet1',
+                data: {
+                    code: 'aaaa',
+                    captcha: 'asdeeae',
+                    cardType: 'VISA'
+                },
+                "headers": {
+                    "content-type": "application/json",
+                    "cache-control": "no-cache",
+                    "postman-token": "4a678f9c-fad9-9714-e6ce-68c9c4a6066c"
+                },
+                type: 'GET',
+                dataType: 'jsonp',
+                crossDomain: true,
+                success: function(responseText) {
+                    alert(responseText);
+                },
+                error: function(responseText) {
+                    console.log(responseText);
+                },
+                done: (function(response) {
+                    console.log(response)
+                })
+
+            });
+        }
+
+        function aja() {
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "dataType": 'jsonp',
+                "url": "http://192.168.1.24:7301/EPIC_IPG/IPGMerchantTransactionValidateServlet1",
+                "method": "GET",
+                "headers": {
+                    "content-type": "application/json",
+                    "cache-control": "no-cache"
+                },
+                "processData": false,
+                "data": "{\r\n    \"userName\":\"rahul\",\r\n    \"password\":\"a\",\r\n    \"requestChannelType\":\"WEB\"\r\n}"
+            }
+
+            $.ajax(settings).done(function(response) {
+                console.log(response);
+            });
+        }
+
+        function sssss() {
+            $.ajax({
+                url: 'http://192.168.1.66:7001/EPIC_IPG/IPGFieldValidateFlagServlet',
+                async: true,
+                crossDomain: true,
+                data :'{"firstname":"epic","cardNumber":"4444444444444444","cvcNum":"123","month":"12","year":"22","code":"23ert45"}',
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                    "cache-control": "no-cache"
+                },
+                success: function(data) {
+                    alert();
+                    console.log(data);
+                }
+            });
+        }
+        
+
+
+        function messageToIframe(message) {
+            var frame = document.getElementById('myFrame');
+            frame.contentWindow.postMessage(message, '*');
+            //            $('#myFrame').contents().find('form')[0].submit();
+            //            var iframe = document.getElementById("myFrame");
+            //            var elmnt = iframe.contentWindow.document.getElementsByTagName("form")[0];
+            //            elmnt.style.display = "none";
+        } 
+        function validateIframe() {
+            var frame = document.getElementById('myFrame');
+            frame.contentWindow.postMessage('validate', '*');
+        }
+
+    </script>
 </body>
 
 </html>

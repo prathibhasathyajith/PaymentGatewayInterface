@@ -1,0 +1,90 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+.row > #subject_f1 {
+    float: left;
+    width: auto;
+    padding: 2px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.row > .icon_in {
+    float: left;
+    width: auto;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 10px;
+    font-size: 10px;
+    background: #e4e4e4;
+}
+.row > .icon_pin {
+    float: right;
+    width: auto;
+    padding: 0px 7px;
+    margin: 0px;
+    font-size: 13px;
+}
+.row > #createDate_f1 {
+    float: right;
+    width: auto;
+    padding: 0px;
+    margin: 0px 2px;
+    font-size: 11px;
+}
+.row > #userName_f1 {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+.row > .recipientName_f1 {
+    padding: 2px 6px;
+    font-size: 11px;
+    color: gray;
+}
+.row > .msg {
+    padding: 20px 6px;
+    font-size: 12px;
+}
+.row > .line {
+    border-top: 1px dotted gray;
+}
+.row > .line2 {
+    border-top: 1px solid #ececec;
+}
+.row > .count {
+    padding: 10px 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.row > .attchements {
+    padding: 6px 10px;
+    font-size: 12px;
+    float: left;
+}
+.row > .attchements > .file {
+    width: auto;
+    padding: 2px 4px;
+    float: left;
+    margin: 0 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 6px 0px #bfbfbf;
+    cursor: pointer
+}
+.row > .attchements > .file:hover{
+    box-shadow:0 1px 14px 0px #bfbfbf;
+}
+.row > .replybtn {
+    padding: 15px 12px;
+}
+.row > .replybox{
+    display: none;
+    padding: 15px 12px;
+    font-size: 12px;
+}
+.row > .replybox > .replymsg label{
+    font-size: 12px;
+}

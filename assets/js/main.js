@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    
+    alert(inIframe());
 
     // inside Iframe
     if (inIframe()) {
@@ -14,9 +16,23 @@ $(document).ready(function () {
         $('.sec-form > .amount').hide();
         $('.PGI > .box').css({
             'width': '100%',
-            'height': '100%',
-            'margin': '0px'
+            'height': 'auto',
+            'margin': '0px',
+            'box-shadow':'0px 0px 0px 0px'
         });
+        $('.sec-button > input.cancelbtn').hide();
+        $('.sec-button > input.paybtn').hide();
+        $('.sec-button > .caption').css({
+            'float': 'none',
+            'margin': '4px 8px',
+            'border-radius': '0px',
+            'border-left': '0px solid',
+            'border-right': '0px solid',
+            'border-top': '0px solid'
+        });
+        
+    
+        
     }
 
 

@@ -6,7 +6,46 @@
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <script>
         var color = '#364E63';
+
+        window.addEventListener('message', function(event) {
+
+            // IMPORTANT: Check the origin of the data! 
+            if (~event.origin.indexOf('http://127.0.0.1:52934')) {
+                // The data has been sent from your site 
+
+                // The data sent with postMessage is stored in event.data 
+                console.log(event.data);
+                if(event.data=='submit'){
+                    $('#ss').submit();
+                }
+                
+            } else {
+                // The data hasn't been sent from your site! 
+                // Be careful! Do not use it. 
+                console.log('else');
+                return;
+            }
+        });
         
+        
+        function sssss() {
+            $.ajax({
+                url: 'http://192.168.1.66:7001/EPIC_IPG/IPGFieldValidateFlagServlet',
+                async: true,
+                crossDomain: true,
+                data :'{"firstname":"epic","cardNumber":"4444444444444444","cvcNum":"123","month":"12","year":"22","code":"23ert45"}',
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                    "cache-control": "no-cache"
+                },
+                success: function(data) {
+                    alert();
+                    console.log(data);
+                }
+            });
+        }
+
     </script>
     <style>
         .merchat-bg-color {
@@ -58,10 +97,10 @@
                         Enter your credit card details
                     </div>
                     <div class="detail">
-                        Please make sure you fillin all mandatory infromation marked with *
+                        Please make sure you fillin all mandatory infromation marked with <span style="font-family:cursive">*</span>
                     </div>
                 </div>
-                <form action="" method="" class="sec-form">
+                <form action="" method="" class="sec-form" id="ss" target="_parent">
                     <div class="amount">
                         <div class="label merchat-font">
                             <div class="cont merchat-bg-color">Amount</div>
@@ -142,6 +181,7 @@
                     <div class="sec-button">
                         <input type="button" value="Cancel" name="cancel" class="cancelbtn" />
                         <input type="submit" value="Pay" name="pay" class="paybtn" />
+                        
                         <div class="caption"><a href="https://www.epictechnology.lk">powered by Epic Lanka (PVT) LTD</a></div>
                     </div>
                 </form>
